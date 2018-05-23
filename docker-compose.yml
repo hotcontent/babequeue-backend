@@ -1,0 +1,30 @@
+version: '2'
+
+services:
+  backend:
+    build: .
+    command: pipenv run python src/main.py
+    volumes:
+      - .:/code
+    ports:
+      - "6543:80"
+    container_name: babequeue_backend
+    restart: always
+
+  mongodb:
+    image: mongo:latest
+    container_name: babequeue_mongodb
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    volumes:
+      - ./data/db:/data/db
+    ports:
+      - 27017:27017
+    command: mongod --smallfiles --logpath=/dev/null # --quiet
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
+
