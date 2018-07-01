@@ -1,17 +1,4 @@
 type: object
-required:
-- id
-- name
-- descriptions
-- author
-- created_date
-- stage
-- participants
-- tasks
-- resources
-- stack
-- votes
-- is_reported
 properties:
   id:
     type: string
@@ -24,21 +11,21 @@ properties:
     type: string
     example: Awesome project description
   author:
-    $ref: 'user.yaml'
+    $ref: ./user.yaml
   created_date:
     type: string
     format: int32
     example: 2016-08-29T09:12:33.001Z
   stage:
-    $ref: 'stage.yaml'
+    $ref: ./stage.yaml
   participants:
     type: array
     items:
-      $ref: 'user.yaml'
+      $ref: ./user.yaml
   tasks:
     type: array
     items:
-      $ref: 'task.yaml'
+      $ref: ./task.yaml
   resources:
     type: array
     items:
@@ -47,9 +34,20 @@ properties:
   stack:
     type: array
     items:
-      $ref: 'tag.yaml'
-
+      $ref: ./tag.yaml
+  votes:
+    type: number
+    example: 2
   is_reported:
     type: boolean
     default: false
     example: true
+required:
+- id
+- name
+- description
+- author
+- created_date
+- stage
+- tasks
+- stack

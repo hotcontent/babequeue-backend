@@ -1,4 +1,4 @@
 /projects:
-  $ref: "./projects/index.yaml"
+  $ref: ./projects/index.yaml
 /projects/{project_id}:
-  $ref: "./projects/single/index.yaml"
+  $ref: ./projects/single/index.yaml

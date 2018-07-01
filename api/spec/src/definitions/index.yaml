@@ -1,10 +1,10 @@
 project:
-  $ref: "project.yaml"
+  $ref: ./project.yaml
 stage:
-  $ref: "stage.yaml"
+  $ref: ./stage.yaml
 tag:
-  $ref: "tag.yaml"
+  $ref: ./tag.yaml
 task:
-  $ref: "task.yaml"
+  $ref: ./task.yaml
 user:
-  $ref: "user.yaml"
+  $ref: ./user.yaml

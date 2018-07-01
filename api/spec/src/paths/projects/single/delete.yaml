@@ -1,9 +1,9 @@
 parameters:
-- in: "path"
-  name: "id"
-  description: "Deleted project id"
+- in: path
+  name: project_id
+  description: Deleted project id
   required: true
-  type: "string"
+  type: string
 responses:
   default:
-    description: "successful operation"
+    description: Project was deleted

@@ -1,7 +1,17 @@
+summary: Get project by ID
+description: ""
+produces:
+- application/json
+parameters:
+- name: project_id
+  in: path
+  description: The ID that needs to be fetched
+  required: true
+  type: string
 responses:
   200:
     description: search results matching criteria
     schema:
-      $ref: "file://src/open_api.yaml#/definitions/project"
+      $ref: file://src/open_api.yaml#/definitions/project
   400:
     description: bad input parameter

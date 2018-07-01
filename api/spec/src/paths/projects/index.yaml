@@ -1,4 +1,2 @@
 get:
-  $ref: "get.yaml"
-post:
-  $ref: "post.yaml"
+  $ref: get.yaml

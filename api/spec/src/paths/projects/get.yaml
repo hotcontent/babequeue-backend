@@ -1,6 +1,4 @@
-description: |
-  By passing in the appropriate options, you can search for
-  available inventory in the system
+description: Search for project by passing parameters in a query
 produces:
 - application/json
 parameters:
@@ -11,10 +9,10 @@ parameters:
   type: string
 responses:
   200:
-    description: search results matching criteria
+    description: OK
     schema:
-    type: array
-    items:
-      $ref: 'file://src/open_api.yaml#/definitions/project'
+      type: array
+      items:
+        $ref: file://src/open_api.yaml#/definitions/project
   400:
-    description: bad input parameter
+    description: Wrong parameter given
