@@ -3,7 +3,7 @@ description: ""
 produces:
 - application/json
 parameters:
-- name: project_id
+- name: projectId
   in: path
   description: The ID that needs to be fetched
   required: true
@@ -12,6 +12,6 @@ responses:
   200:
     description: search results matching criteria
     schema:
-      $ref: 'file:/src/open_api.yaml#/definitions/Project'
+      $ref: 'file://src/open_api.yaml#/definitions/Project'
   400:
     description: bad input parameter

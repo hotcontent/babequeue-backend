@@ -1,6 +1,6 @@
 parameters:
 - in: path
-  name: project_id
+  name: projectId
   description: Deleted project id
   required: true
   type: string

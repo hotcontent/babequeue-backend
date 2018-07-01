@@ -13,7 +13,7 @@ responses:
   200:
     description: "OK"
     schema:
-      $ref: "file:/src/open_api.yaml#/definitions/User"
+      $ref: "file://src/open_api.yaml#/definitions/User"
   400:
     description: "Invalid ID supplied"
   404:

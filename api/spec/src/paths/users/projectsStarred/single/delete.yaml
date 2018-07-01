@@ -19,7 +19,7 @@ responses:
     schema:
       type: array
       items:
-        $ref: "file:/src/open_api.yaml#/definitions/Project"
+        $ref: "file://src/open_api.yaml#/definitions/Project"
   400:
     description: "Invalid ID supplied"
   404:

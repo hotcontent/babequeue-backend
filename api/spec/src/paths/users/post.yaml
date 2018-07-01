@@ -10,11 +10,11 @@ parameters:
   description: "User object that needs to be created"
   required: true
   schema:
-    $ref: "file:/src/open_api.yaml#/definitions/User"
+    $ref: "file://src/open_api.yaml#/definitions/User"
 responses:
   405:
     description: "Invalid input"
   201:
     description: "User created"
     schema:
-      $ref: "file:/src/open_api.yaml#/definitions/User"
+      $ref: "file://src/open_api.yaml#/definitions/User"

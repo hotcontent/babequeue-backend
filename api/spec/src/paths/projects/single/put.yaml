@@ -1,6 +1,6 @@
 parameters:
 - in: path
-  name: project_id
+  name: projectId
   description: Updated project id
   required: true
   type: string
@@ -9,7 +9,7 @@ parameters:
   description: Updated project object
   required: true
   schema:
-    $ref: file://src/open_api.yaml#/definitions/project
+    $ref: file://src/open_api.yaml#/definitions/Project
 responses:
   default:
     description: Project was updated
