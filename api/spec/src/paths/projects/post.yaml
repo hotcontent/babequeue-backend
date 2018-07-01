@@ -1,0 +1,15 @@
+description: ""
+consumes:
+- application/json
+produces:
+- application/json
+- in: body
+  name: body
+  descriptions:
+  - Project object that needs to be added
+  required: true
+  schema:
+    $ref: file://src/open_api.yaml#/definitions/project
+responses:
+  405:
+    description: Invalid object input

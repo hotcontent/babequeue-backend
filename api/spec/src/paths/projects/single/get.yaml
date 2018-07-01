@@ -1,36 +1,13 @@
-tags:
-- developers
-summary: searches inventory
-operationId: searchInventory
-description: |
-  By passing in the appropriate options, you can search for
-  available inventory in the system
+summary: Get project by ID
+description: ""
 produces:
 - application/json
 parameters:
-- in: path
-  name: projectId
-  type: string
+- name: project_id
+  in: path
+  description: The ID that needs to be fetched
   required: true
-  description: Id of project to get
-- in: query
-  name: searchString
-  description: pass an optional search string for looking up inventory
-  required: false
   type: string
-- in: query
-  name: skip
-  description: number of records to skip for pagination
-  type: integer
-  format: int32
-  minimum: 0
-- in: query
-  name: limit
-  description: maximum number of records to return
-  type: integer
-  format: int32
-  minimum: 0
-  maximum: 50
 responses:
   200:
     description: search results matching criteria

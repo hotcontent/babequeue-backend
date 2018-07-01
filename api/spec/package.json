@@ -11,9 +11,5 @@
   "license": "ISC",
   "devDependencies": {
     "swagger-parser": "^5.0.0"
-  },
-  "dependencies": {
-    "js-yaml": "^3.12.0",
-    "json-refs": "^3.0.4"
   }
 }

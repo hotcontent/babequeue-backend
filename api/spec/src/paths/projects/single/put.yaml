@@ -1,0 +1,15 @@
+parameters:
+- in: path
+  name: project_id
+  description: Updated project id
+  required: true
+  type: string
+- in: body
+  name: body
+  description: Updated project object
+  required: true
+  schema:
+    $ref: file://src/open_api.yaml#/definitions/project
+responses:
+  default:
+    description: Project was updated

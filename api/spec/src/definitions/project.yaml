@@ -1,16 +1,4 @@
 type: object
-#required:
-#- id
-#- name
-#- author
-#- created_date
-#- stage
-#- participants
-#- tasks
-#- resources
-#- stack
-#- votes
-#- is_reported
 properties:
   id:
     type: string
@@ -19,6 +7,9 @@ properties:
   name:
     type: string
     example: Awesome Project
+  description:
+    type: string
+    example: Awesome project description
   author:
     $ref: ./user.yaml
   created_date:
@@ -44,8 +35,20 @@ properties:
     type: array
     items:
       $ref: ./tag.yaml
-
+  votes:
+    type: number
+    example: 2
   is_reported:
     type: boolean
     default: false
     example: true
+required:
+- id
+- name
+- description
+- author
+- created_date
+- stage
+- tasks
+- stack
+

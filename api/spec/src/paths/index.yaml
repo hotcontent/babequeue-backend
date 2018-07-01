@@ -1,0 +1,4 @@
+/projects:
+  $ref: ./projects/index.yaml
+/projects/{project_id}:
+  $ref: ./projects/single/index.yaml
