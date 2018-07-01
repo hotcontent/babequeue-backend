@@ -1,10 +1,12 @@
-project:
-  $ref: ./project.yaml
-stage:
-  $ref: ./stage.yaml
-tag:
-  $ref: ./tag.yaml
-task:
-  $ref: ./task.yaml
-user:
+User:
   $ref: ./user.yaml
+Notification:
+  $ref: ./notification.yaml
+Project:
+  $ref: ./project.yaml
+Stage:
+  $ref: ./stage.yaml
+Tag:
+  $ref: ./tag.yaml
+Task:
+  $ref: ./task.yaml
