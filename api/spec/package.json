@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "swagger-parser": "^5.0.0",
+    "swagger-parser": "^5.0.0"
   }
 }
