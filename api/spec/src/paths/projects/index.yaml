@@ -1,0 +1,10 @@
+get:
+  $ref: 'get.yaml'
+#post:
+#  $ref: 'post.yaml'
+#put:
+#  response: 400
+#  dsecription: 'Method not allowed'
+#delete:
+#  response: 400
+#  dsecription: 'Method not allowed'

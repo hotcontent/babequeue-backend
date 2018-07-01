@@ -1,0 +1,24 @@
+summary: "Get starred project"
+operationId: "getStarredProject"
+produces:
+- "application/json"
+parameters:
+- name: "userId"
+  in: "path"
+  description: "ID of users to return"
+  required: true
+  type: "string"
+- name: "projectId"
+  in: "path"
+  description: "ID of project to unstar"
+  required: true
+  type: "string"
+responses:
+  200:
+    description: "OK"
+    schema:
+      $ref: "file:/src/open_api.yaml#/definitions/Project"
+  400:
+    description: "Invalid ID supplied"
+  404:
+    description: "User not found"
