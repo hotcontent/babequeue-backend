@@ -30,6 +30,6 @@ responses:
   200:
     description: search results matching criteria
     schema:
-      $ref: '../../definitions/project.yaml'
+      $ref: 'file:/src/open_api.yaml#/definitions/Project'
   400:
     description: bad input parameter

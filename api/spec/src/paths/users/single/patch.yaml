@@ -1,0 +1,31 @@
+summary: "Updates a users in the store with form data"
+description: ""
+operationId: "updateUserWithForm"
+consumes:
+- "application/x-www-form-urlencoded"
+produces:
+- "application/json"
+parameters:
+- name: "userId"
+  in: "path"
+  description: "ID of users that needs to be updated"
+  required: true
+  type: "string"
+- name: "email"
+  in: "formData"
+  description: "Updated email of the users"
+  required: false
+  type: "string"
+  format: "email"
+- name: "about"
+  in: "formData"
+  description: "Updated about section of the users"
+  required: false
+  type: "string"
+responses:
+  405:
+    description: "Invalid input"
+  200:
+     description: "OK"
+     schema:
+         $ref: "file:/src/open_api.yaml#/definitions/User"
