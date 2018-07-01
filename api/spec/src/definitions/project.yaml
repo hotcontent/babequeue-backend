@@ -1,0 +1,51 @@
+type: object
+#required:
+#- id
+#- name
+#- author
+#- created_date
+#- stage
+#- participants
+#- tasks
+#- resources
+#- stack
+#- votes
+#- is_reported
+properties:
+  id:
+    type: string
+    format: uuid
+    example: d290f1ee-6c54-4b01-90e6-d701748f0851
+  name:
+    type: string
+    example: Awesome Project
+  author:
+    $ref: ./user2.yaml
+  created_date:
+    type: string
+    format: int32
+    example: 2016-08-29T09:12:33.001Z
+  stage:
+    $ref: ./stage.yaml
+  participants:
+    type: array
+    items:
+      $ref: ./user2.yaml
+  tasks:
+    type: array
+    items:
+      $ref: ./task.yaml
+  resources:
+    type: array
+    items:
+      type: string
+    example: ['http://some-img.com', 'http://awesome-url.com']
+  stack:
+    type: array
+    items:
+      $ref: ./tag.yaml
+
+  is_reported:
+    type: boolean
+    default: false
+    example: true

@@ -1,0 +1,29 @@
+swagger: '2.0'
+info:
+  description: This is a simple API
+  version: 1.0.0
+  title: Simple Inventory API
+  # put the contact info for your development or API team
+  contact:
+    email: you@your-company.com
+
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+
+tags:
+- name: admins
+  description: Secured Admin-only calls
+- name: developers
+  description: Operations available to regular developers
+
+paths:
+  $ref: ./paths/paths.yaml
+
+definitions:
+  $ref: ./definitions/index.yaml
+
+host: virtserver.swaggerhub.com
+basePath: /Hot-Content/babequeue/1.0.0
+schemes:
+ - https

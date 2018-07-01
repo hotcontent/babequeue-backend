@@ -1,0 +1,19 @@
+{
+  "name": "swagger-spec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "resolver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch src/ resolver.js --verbose -e yaml"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "swagger-parser": "^5.0.0"
+  },
+  "dependencies": {
+    "js-yaml": "^3.12.0",
+    "json-refs": "^3.0.4"
+  }
+}
