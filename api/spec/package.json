@@ -5,7 +5,7 @@
   "main": "resolver.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon resolver.js --watch ./src -L"
+    "start": "nodemon --watch src/ resolver.js --verbose -e yaml"
   },
   "author": "",
   "license": "ISC",
