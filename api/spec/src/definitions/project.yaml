@@ -2,6 +2,7 @@ type: object
 required:
 - id
 - name
+- descriptions
 - author
 - created_date
 - stage
@@ -19,6 +20,9 @@ properties:
   name:
     type: string
     example: Awesome Project
+  description:
+    type: string
+    example: Awesome project description
   author:
     $ref: 'user.yaml'
   created_date:

@@ -18,7 +18,9 @@ tags:
   description: Operations available to regular developers
 
 paths:
-  $ref: './paths/paths.yaml'
+  $ref: ./paths/index.yaml
+definitions:
+  $ref: ./definitions/index.yaml
 
 host: virtserver.swaggerhub.com
 basePath: /Hot-Content/babequeue/1.0.0

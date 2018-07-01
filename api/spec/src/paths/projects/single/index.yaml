@@ -1,8 +1,6 @@
 get:
-  $ref: 'get.yaml'
-post:
-  $ref: 'post.yaml'
+  $ref: "get.yaml"
 put:
-  $ref: 'put.yaml'
+  $ref: "put.yaml"
 delete:
-  $ref: 'delete.yaml'
+  $ref: "delete.yaml"
