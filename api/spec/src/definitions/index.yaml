@@ -1,5 +1,5 @@
 User:
-  $ref: ./user.yaml
+  $ref: ./user2.yaml
 Notification:
   $ref: ./notification.yaml
 Project:

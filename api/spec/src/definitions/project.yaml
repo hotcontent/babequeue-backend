@@ -20,7 +20,7 @@ properties:
     type: string
     example: Awesome Project
   author:
-    $ref: ./user.yaml
+    $ref: ./user2.yaml
   created_date:
     type: string
     format: int32
@@ -30,7 +30,7 @@ properties:
   participants:
     type: array
     items:
-      $ref: ./user.yaml
+      $ref: ./user2.yaml
   tasks:
     type: array
     items:
