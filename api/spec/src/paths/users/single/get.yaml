@@ -1,20 +1,20 @@
-summary: "Find users by ID"
-description: "Returns a single users"
-operationId: "getUserById"
+summary: 'Find users by ID'
+description: 'Returns a single users'
+operationId: getUserById
 produces:
-- "application/json"
+- application/json
 parameters:
-- name: "userId"
-  in: "path"
-  description: "ID of users to return"
+- name: userId
+  in: path
+  description: 'ID of users to return'
   required: true
-  type: "string"
+  type: string
 responses:
   200:
-    description: "OK"
+    description: OK
     schema:
-      $ref: "file://src/open_api.yaml#/definitions/User"
+      $ref: file://src/open_api.yaml#/definitions/UserDefault
   400:
-    description: "Invalid ID supplied"
+    description: 'Invalid ID supplied'
   404:
-    description: "User not found"
+    description: 'User not found'

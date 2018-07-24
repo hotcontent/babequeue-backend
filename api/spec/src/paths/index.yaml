@@ -11,3 +11,8 @@
   $ref: ./users/projectsStarred/index.yaml
 /users/{userId}/projectsStarred/{projectId}:
   $ref: ./users/projectsStarred/single/index.yaml
+
+/tags:
+  $ref: ./tags/index.yaml
+/tags/{tagId}:
+  $ref: ./tags/single/index.yaml

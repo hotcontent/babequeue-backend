@@ -28,4 +28,4 @@ responses:
   200:
      description: "OK"
      schema:
-         $ref: "file://src/open_api.yaml#/definitions/User"
+         $ref: "file://src/open_api.yaml#/definitions/UserDefault"

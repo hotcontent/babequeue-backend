@@ -1,0 +1,16 @@
+description: 'Get tag by ID'
+produces:
+- application/json
+parameters:
+- name: tagId
+  in: path
+  description: 'The ID that needs to be fetched'
+  required: true
+  type: string
+responses:
+  200:
+    description: 'Search results matching criteria'
+    schema:
+      $ref: file://src/open_api.yaml#/definitions/TagDefault
+  400:
+    description: 'Bad input parameter'

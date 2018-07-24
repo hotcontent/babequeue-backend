@@ -1,0 +1,25 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    example: d290f1ee-6c54-4b01-90e6-d701748f0851
+  name:
+    type: string
+    example: Awesome Project
+  description:
+    type: string
+    example: Awesome project description
+  author:
+    $ref: ../user/user.yaml
+  created_date:
+    type: string
+    format: int32
+    example: 2016-08-29T09:12:33.001Z
+required:
+- id
+- name
+- description
+- author
+- created_date
+
