@@ -1,12 +1,20 @@
-User:
-  $ref: ./user.yaml
-Notification:
-  $ref: ./notification.yaml
-Project:
-  $ref: ./project.yaml
-Stage:
-  $ref: ./stage.yaml
-Tag:
-  $ref: ./tag.yaml
-Task:
-  $ref: ./task.yaml
+UserDefault:
+  $ref: ./user/user.yaml
+
+NotificationDefault:
+  $ref: ./notification/notification.yaml
+
+ProjectDefault:
+  $ref: ./project/project.yaml
+ProjectByTag:
+  $ref: ./project/project_by_tag.yaml
+
+
+StageDefault:
+  $ref: ./stage/stage.yaml
+
+TagDefault:
+  $ref: ./tag/tag.yaml
+
+TaskDefault:
+  $ref: ./task/task.yaml

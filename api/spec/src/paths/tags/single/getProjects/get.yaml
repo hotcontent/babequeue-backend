@@ -1,0 +1,18 @@
+description: 'Get all projects which include following tag'
+produces:
+- application/json
+parameters:
+- name: tagId
+  in: path
+  description: 'The ID of tag'
+  required: true
+  type: string
+responses:
+  200:
+    description: 'Search results matching criteria'
+    schema:
+      type: array
+      items:
+        $ref: file://src/open_api.yaml#/definitions/ProjectByTag
+  400:
+    description: 'Bad input parameter'

@@ -15,15 +15,15 @@ properties:
 #  projectsOwned:
 #    type: array
 #    items:
-#      $ref: ./project.yaml
+#      $ref: ./project/project.yaml
 #  projectsStarred:
 #    type: array
 #    items:
-#      $ref: "./project.yaml"
+#      $ref: "./project/project.yaml"
   about:
     type: string
     example: "Hello! My name is John and I am a web developer."
   notifications:
     type: array
     items:
-      $ref: "./notification.yaml"
+      $ref: "../notification/notification.yaml"

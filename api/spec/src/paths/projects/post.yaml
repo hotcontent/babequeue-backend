@@ -9,7 +9,7 @@ produces:
   - Project object that needs to be added
   required: true
   schema:
-    $ref: file://src/open_api.yaml#/definitions/project
+    $ref: file://src/open_api.yaml#/definitions/ProjectDefault
 responses:
   405:
     description: Invalid object input

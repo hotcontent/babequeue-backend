@@ -11,21 +11,21 @@ properties:
     type: string
     example: Awesome project description
   author:
-    $ref: ./user.yaml
+    $ref: ../user/user.yaml
   created_date:
     type: string
     format: int32
     example: 2016-08-29T09:12:33.001Z
   stage:
-    $ref: ./stage.yaml
+    $ref: ../stage/stage.yaml
   participants:
     type: array
     items:
-      $ref: ./user.yaml
+      $ref: ../user/user.yaml
   tasks:
     type: array
     items:
-      $ref: ./task.yaml
+      $ref: ../task/task.yaml
   resources:
     type: array
     items:
@@ -34,7 +34,7 @@ properties:
   stack:
     type: array
     items:
-      $ref: ./tag.yaml
+      $ref: ../tag/tag.yaml
   votes:
     type: number
     example: 2

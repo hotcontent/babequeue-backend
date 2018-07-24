@@ -1,0 +1,9 @@
+parameters:
+- in: path
+  name: tagId
+  description: 'Deleted tag id'
+  required: true
+  type: string
+responses:
+  default:
+    description: 'Tag was deleted'

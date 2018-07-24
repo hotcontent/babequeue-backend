@@ -9,7 +9,7 @@ parameters:
   description: Updated project object
   required: true
   schema:
-    $ref: file://src/open_api.yaml#/definitions/Project
+    $ref: file://src/open_api.yaml#/definitions/ProjectDefault
 responses:
   default:
     description: Project was updated
